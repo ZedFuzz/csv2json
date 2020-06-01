@@ -14,7 +14,7 @@ def load_csv(fp_in, delimiter=',', quotechar='"', remove_empty=False,
 
 
 def save_json(data, fp_out, pretty_spaces=4, sort_keys=False, **kwargs):
-    json.dump(data, fp_out, indent=pretty_spaces, sort_keys=sort_keys)
+    json.dump(data, fp_out, indent=pretty_spaces, sort_keys=sort_keys, ensure_ascii=False)
 
 
 def convert(csv, json, **kwargs):
